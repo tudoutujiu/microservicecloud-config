@@ -3,11 +3,12 @@
     active: 
     - dev
 ---
+
 server:
   port: 7001 #注册中心占用7001端口号，冒号后面必须有空格
-
 spring: 
   profiles: dev
+  application:
     name: microservicecloud-config-eureka-client
 
 eureka: 
@@ -24,6 +25,7 @@ server:
 
 spring: 
   profiles: test
+  application:
     name: microservicecloud-config-eureka-client
 
 eureka: 
